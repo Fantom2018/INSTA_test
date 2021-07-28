@@ -35,7 +35,7 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
             </div>
-            <div class="list-group myusers" style="height: content-box; background: #f9d6d5;">
+            <div class="list-group myusers" style="height: content-box; background: #fff;">
                 <h2> Check User to your Favorite</h2>
 
             </div>
@@ -55,9 +55,13 @@
         success(data){
             for (let index in data) {
                 $('.myusers').append(`
-                    <div class="card" style="width:18rem; margin-right: 10px;">
-                        <div class="card-body">
+                    <div class="card" >
+                        <div class="card-body favor"  >
                             <h3 class="card-title">${data[index].login }</h3>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
+                              <label class="form-check-label" for="flexSwitchCheckDefault">Favorits</label>
+                            </div>
 
                         </div>
                     </div>
@@ -68,6 +72,21 @@
         }
     })
 </script>
+<style>
+    .favor{
+        height: content-box;
+        background:  rgba(0, 0, 0, 0.03);
+        border: 3px solid rgb(255, 255, 255);
+        display: flex;
+        justify-content:space-between;
+    }
+    .form-check-label{
+        font-size: 16px;
+    }
+
+
+</style>
+
 
 {{-- rfr coment --}}
 
