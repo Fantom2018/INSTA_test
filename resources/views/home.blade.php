@@ -58,11 +58,14 @@
                     <div class="card" >
                         <div class="card-body favor"  >
                             <h3 class="card-title mm">${data[index].login }</h3>
-                            <div class="form-check form-switch">
-                              <input class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
-                              <label class="form-check-label" for="flexSwitchCheckDefault">Favorits</label>
-                            </div>
+                            <div class="wrapper">
+                                <div class=" form-switch">
+                                    <input class="form-check" type="checkbox" value="" id="flexCheckDefault">
+                                </div>
+                                <button type="button" class="btn btn-light">Accept</button>
+                                <button type="button" class="btn btn-link">Delet</button>
 
+                            </div>
                         </div>
                     </div>
                 `)
@@ -82,16 +85,23 @@
         height: 18px;
         align-items: center;
 
-    }
-    .form-check-label{
-        font-size: 14px;
 
+    }
+    .form-check{
+        margin-top: 6px;
+
+    }
+    .wrapper{
+        display: block;
+        display: flex;
+        color: rgb(211, 66, 66);
     }
 
     .mm{
        font-size: 18px;
        font-weight: bold;
        color: rgb(230, 168, 23);
+       font-family: 'Trebuchet MS';
     }
 
     .h2-1{
