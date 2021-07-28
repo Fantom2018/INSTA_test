@@ -36,7 +36,7 @@
 
             </div>
             <div class="list-group myusers" style="height: content-box; background: #fff;">
-                <h2> Check User to your Favorite</h2>
+                <h2 class="h2-1">   Check User to your Favorite users by "nicname"</h2>
 
             </div>
 
@@ -57,7 +57,7 @@
                 $('.myusers').append(`
                     <div class="card" >
                         <div class="card-body favor"  >
-                            <h3 class="card-title">${data[index].login }</h3>
+                            <h3 class="card-title mm">${data[index].login }</h3>
                             <div class="form-check form-switch">
                               <input class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
                               <label class="form-check-label" for="flexSwitchCheckDefault">Favorits</label>
@@ -79,9 +79,26 @@
         border: 3px solid rgb(255, 255, 255);
         display: flex;
         justify-content:space-between;
+        height: 18px;
+        align-items: center;
+
     }
     .form-check-label{
-        font-size: 16px;
+        font-size: 14px;
+
+    }
+
+    .mm{
+       font-size: 18px;
+       font-weight: bold;
+       color: rgb(230, 168, 23);
+    }
+
+    .h2-1{
+       font-size: 22px;
+       font-weight: bold;
+       margin: 8px auto;
+       text-align: center;
     }
 
 
